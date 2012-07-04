@@ -5,13 +5,13 @@
 	<groupId>cc.alessandro</groupId>
 	<artifactId>libravatar-j</artifactId>
 	<packaging>jar</packaging>
-	<name>Java bindings for libravatar — http://libravatar.org</name>
+	<name>Java bindings for libravatar ï¿½ http://libravatar.org</name>
 	<version>1.0-SNAPSHOT</version>
 	<url>https://github.com/alessandroleite/libravatar-j</url>
 	<inceptionYear>2012</inceptionYear>
 
 	<description>
-		Java bindings for libravatar — See http://libravatar.org for details about the API.
+		Java bindings for libravatar ï¿½ See http://libravatar.org for details about the API.
     </description>
 
 	<developers>
@@ -116,7 +116,7 @@
 			<url>http://anydoby.com/maven</url>
 		</pluginRepository>
 	</pluginRepositories>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>release-repo</id>
@@ -142,7 +142,30 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>12.0</version>
-		</dependency>		
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.3</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.6</version>
+			<scope>compile</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -192,7 +215,7 @@
 							</addDefaultSpecificationEntries>
 							<addDefaultImplementationEntries>
 								true
-							</addDefaultImplementationEntries>							
+							</addDefaultImplementationEntries>
 						</manifest>
 					</archive>
 				</configuration>
@@ -251,9 +274,9 @@
 				</executions>
 			</plugin>
 			<plugin>
-				 <groupId>org.apache.maven.plugins</groupId>
-				 <artifactId>maven-source-plugin</artifactId>
-				 <version>2.1.2</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
