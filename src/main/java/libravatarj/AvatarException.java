@@ -7,10 +7,17 @@ public class AvatarException extends RuntimeException {
 	 */
 	private static final long serialVersionUID = 2574665849051070802L;
 
+	/**
+	 * Default constructor
+	 */
 	public AvatarException() {
 		super();
 	}
 
+	/**
+	 * 
+	 * @param message Exception message text
+	 */
 	public AvatarException(String message) {
 		super(message);
 	}
